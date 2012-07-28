@@ -87,13 +87,13 @@ endmenu
 
 config BR2_DL_DIR
 	string "Download dir"
-	default "$(TOPDIR)/dl"
+	default "$(TOPDIR)/distfiles"
 	help
 	  Directory to store all the source files that we need to fetch.
 	  If the Linux shell environment has defined the BUILDROOT_DL_DIR
 	  environment variable, then this overrides this configuration item.
 
-	  The default is $(TOPDIR)/dl
+	  The default is $(TOPDIR)/distfiles
 
 config BR2_HOST_DIR
 	string "Host dir"
