@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Buildroot 2012.05-gbb8dcfe Configuration
+# Buildroot 2012.05-ge5cba31 Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_arm=y
@@ -299,8 +299,9 @@ BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox-1.20.x.config"
 #
 # gcc needs development files in target filesystem
 #
-# BR2_PACKAGE_GETTEXT is not set
-# BR2_PACKAGE_LIBINTL is not set
+BR2_PACKAGE_GETTEXT=y
+# BR2_PACKAGE_GETTEXT_STATIC is not set
+BR2_PACKAGE_LIBINTL=y
 # BR2_PACKAGE_GMP is not set
 # BR2_PACKAGE_GPERF is not set
 # BR2_PACKAGE_MAKE is not set
@@ -431,7 +432,13 @@ BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox-1.20.x.config"
 #
 # BR2_PACKAGE_HASERL is not set
 # BR2_PACKAGE_LUA is not set
-# BR2_PACKAGE_MICROPERL is not set
+BR2_PACKAGE_MICROPERL=y
+BR2_PACKAGE_MICROPERL_MODULES=""
+
+#
+# module bundles
+#
+# BR2_PACKAGE_MICROPERL_BUNDLE_CGI is not set
 # BR2_PACKAGE_PHP is not set
 # BR2_PACKAGE_PYTHON is not set
 # BR2_PACKAGE_RUBY is not set
@@ -467,7 +474,7 @@ BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox-1.20.x.config"
 #
 # BR2_PACKAGE_LIBARCHIVE is not set
 # BR2_PACKAGE_LZO is not set
-# BR2_PACKAGE_ZLIB is not set
+BR2_PACKAGE_ZLIB=y
 
 #
 # Crypto
@@ -563,14 +570,15 @@ BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox-1.20.x.config"
 #
 # Networking
 #
-# BR2_PACKAGE_GLIB_NETWORKING is not set
+BR2_PACKAGE_GLIB_NETWORKING=y
 # BR2_PACKAGE_LIBCGI is not set
 # BR2_PACKAGE_LIBCGICC is not set
-# BR2_PACKAGE_LIBCURL is not set
+BR2_PACKAGE_LIBCURL=y
+# BR2_PACKAGE_CURL is not set
 # BR2_PACKAGE_LIBDNET is not set
 # BR2_PACKAGE_LIBESMTP is not set
 # BR2_PACKAGE_LIBEXOSIP2 is not set
-# BR2_PACKAGE_LIBFCGI is not set
+BR2_PACKAGE_LIBFCGI=y
 # BR2_PACKAGE_LIBIDN is not set
 # BR2_PACKAGE_LIBOAUTH is not set
 # BR2_PACKAGE_LIBMICROHTTPD is not set
@@ -605,8 +613,8 @@ BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox-1.20.x.config"
 # BR2_PACKAGE_LIBELF is not set
 # BR2_PACKAGE_LIBEVENT is not set
 # BR2_PACKAGE_LIBEV is not set
-# BR2_PACKAGE_LIBFFI is not set
-# BR2_PACKAGE_LIBGLIB2 is not set
+BR2_PACKAGE_LIBFFI=y
+BR2_PACKAGE_LIBGLIB2=y
 # BR2_PACKAGE_LIBICAL is not set
 # BR2_PACKAGE_LIBNSPR is not set
 # BR2_PACKAGE_LIBSIGC is not set
@@ -622,10 +630,10 @@ BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox-1.20.x.config"
 #
 # BR2_PACKAGE_ENCHANT is not set
 # BR2_PACKAGE_ICU is not set
-# BR2_PACKAGE_LIBICONV is not set
+BR2_PACKAGE_LIBICONV=y
 # BR2_PACKAGE_NCURSES is not set
 # BR2_PACKAGE_NEWT is not set
-# BR2_PACKAGE_PCRE is not set
+BR2_PACKAGE_PCRE=y
 # BR2_PACKAGE_POPT is not set
 # BR2_PACKAGE_READLINE is not set
 # BR2_PACKAGE_SLANG is not set
